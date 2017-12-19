@@ -59,14 +59,15 @@ user-select: none;
 
 #start_menu
 {
-  height: 70%;
-  width: 33%;
+  height: 500px;
+  width: 300px;
   background: rgba(20, 20, 20, 0.95);
   display: none;
   transition: 2s;
   position:fixed;
   left:0px;
   bottom:45px;
+  padding: 15px;
 }
 
 #button
@@ -164,4 +165,9 @@ user-select: none;
   right:0px;
   bottom:45px;
   margin: 10px;
+}
+
+#user
+{
+  color: #fff;
 }
