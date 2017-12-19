@@ -1,7 +1,66 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+   <head>
+      <title>ir4hul@homepage:~$</title>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css"/>
+      <script src="js/bootstrap.js" type="text/javascript"></script>
+      <script>
+         function toggle_start() {
+           var x = document.getElementById("start_menu");
+           if (x.style.display === "block") {
+               x.style.display = "none";
+           } else {
+               x.style.display = "block";
+           }
+         }
+         function off_start() {
+           var x = document.getElementById("start_menu");
+           if (x.style.display === "block") {
+               x.style.display = "none";
+           }
+         }
+      </script>
+   </head>
+   <body>
+      <!--Main Desktop-->
+      <div id="desktop" onclick="off_start()">
+
+      </div>
+      <!--Start Menu-->
+      <div id="start_menu">
+            Some content
+      </div>
+
+      <!--Taskbar-->
+      <div id="taskbar">
+         <div id="button" onclick="toggle_start()">
+            <i class="fa fa-windows" aria-hidden="true"></i>
+         </div>
+         <div id="button">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+         </div>
+         <div id="button">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+         </div>
+         <div id="button">
+            <i class="fa fa-github" aria-hidden="true"></i>
+         </div>
+         <!-- Icons On The Right Of Taskbar-->
+         <div id="button_right">
+            <i class="fa fa-css3" aria-hidden="true"></i>
+         </div>
+         <div id="button_right">
+            <i class="fa fa-html5" aria-hidden="true"></i>
+         </div>
+         <div id="button_right_credit">
+            Made with <i class="fa fa-heart" aria-hidden="true" style="color: #ff0000;"></i> using : 
+         </div>
+         <div id="button_right">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+         </div>
+      </div>
+   </body>
 </html>
