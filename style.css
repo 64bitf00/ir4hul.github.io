@@ -94,22 +94,29 @@ user-select: none;
 #button .fa-twitter:hover
 {
   color: #00aced;
+  box-shadow: inset 0 -2.5px 0 #76b9ed;
 }
 
 #button .fa-linkedin:hover
 {
   color: #0077B5;
+  box-shadow: inset 0 -2.5px 0 #76b9ed;
 }
 
-#button .fa-windows:hover
+#button .fa-github:hover
 {
-  color: #429ce3;
+  box-shadow: inset 0 -2.5px 0 #76b9ed;
 }
+
+#button .fa-envelope:hover
+{
+  box-shadow: inset 0 -2.5px 0 #76b9ed;
+}
+
 
 #button:hover
 {
   background: #47484c;
-  box-shadow: inset 0 -2.5px 0 #76b9ed;
 }
 
 #button_right
