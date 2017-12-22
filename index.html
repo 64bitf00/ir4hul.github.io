@@ -1,94 +1,102 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>ir4hul@homepage:~$</title>
-      <link rel="stylesheet" href="style.css">
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
-      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
-      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-      <script>
-         function toggle_start() {
-           var x = document.getElementById("start_menu");
-           if (x.style.display === "block") {
-               x.style.display = "none";
-           } else {
-               x.style.display = "block";
-           }
-         }
-         function off_start() {
-           var x = document.getElementById("start_menu");
-           if (x.style.display === "block") {
-               x.style.display = "none";
-           }
-         }
-      </script>
-   </head>
-   <body>
-      <!--Main Desktop-->
-      <div id="desktop" onclick="off_start()">
-            <div id="icon">
-               <center><img src="https://png.icons8.com/color/96/monitor.png" title="My Computer" width="64" height="64">
-               <span>My Computer</span></center>
-            </div>
-            <div id="icon">
-               <center><img src="https://png.icons8.com/color/96/opened-folder.png" title="Folder" width="64" height="64">
-               <span>Folder</span></center>
-            </div>
-            <div id="icon">
-               <center><img src="https://png.icons8.com/color/96/console.png" title="Terminal" width="64" height="64">
-               <span>Terminal</span></center>
-            </div>
-            <div id="icon" class="recycle_bin">
-               <center><img src="https://png.icons8.com/color/96/delete.png" title="Recycle Bin" width="64" height="64">
-               <span>Recycle Bin</span></center>
-            </div>
-      </div>
-      <!--Start Menu-->
-      <div id="start_menu" class="container-fluid">
-            <div id="user">
-               <center>
-                  <img src="me.jpg" height="128" width="128" style="border-radius: 100%;margin-top: 10px;margin-bottom: 10px;">
-                  <p style="font-size: 22px;">Rahul</p>
-               </center>
-            </div>
-      </div>
 
-      <!--Taskbar-->
-      <div id="taskbar">
-         <center>
-         <div id="button" onclick="toggle_start()">
-            <i class="fa fa-windows" aria-hidden="true"></i>
-         </div>
-         <div id="button">
-            <a href="https://twitter.com/ir4hul"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-         </div>
-         <div id="button">
-            <a href="https://www.linkedin.com/in/rahul-275108156/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-         </div>
-         <div id="button">
-            <a href="https://github.com/ir4hul"><i class="fa fa-github" aria-hidden="true"></i></a>
-         </div>
-         <div id="button">
-            <a href="mailto:rahul46940@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-         </div>
+<head>
+    <title>ir4hul@homepage:~$</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        function toggle_start() {
+            var x = document.getElementById("start_menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
 
-         <!-- Icons On The Right Of Taskbar-->
-         <div id="button_right">
-            <i class="fa fa fa-fort-awesome" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Fontawesome"></i>   
-         </div>
-         <div id="button_right">
-            <i class="fa fa-css3" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="CSS3"></i>   
-         </div>
-         <div id="button_right">
-            <i class="fa fa-html5" aria-hidden="true"></i>
-         </div>
-         <div id="button_right_credit">
-            Made with <i class="fa fa-heart" aria-hidden="true" style="color: #ff0000;"></i> using : 
-         </div>
-         </center>
-      </div>
-   </body>
+        function off_start() {
+            var x = document.getElementById("start_menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--Main Desktop-->
+    <div id="desktop" onclick="off_start()">
+        <div id="icon">
+            <center><img src="https://png.icons8.com/color/96/monitor.png" title="My Computer" width="64" height="64">
+                <span>My Computer</span>
+            </center>
+        </div>
+        <div id="icon">
+            <center><img src="https://png.icons8.com/color/96/opened-folder.png" title="Folder" width="64" height="64">
+                <span>Folder</span>
+            </center>
+        </div>
+        <div id="icon">
+            <center><img src="https://png.icons8.com/color/96/console.png" title="Terminal" width="64" height="64">
+                <span>Terminal</span>
+            </center>
+        </div>
+        <div id="icon" class="recycle_bin">
+            <center><img src="https://png.icons8.com/color/96/delete.png" title="Recycle Bin" width="64" height="64">
+                <span>Recycle Bin</span>
+            </center>
+        </div>
+    </div>
+    <!--Start Menu-->
+    <div id="start_menu" class="container-fluid">
+        <div id="user">
+            <center>
+                <img src="me.jpg" height="128" width="128" style="border-radius: 100%;margin-top: 10px;margin-bottom: 10px;">
+                <p style="font-size: 22px;">Rahul</p>
+            </center>
+        </div>
+    </div>
+
+    <!--Taskbar-->
+    <div id="taskbar">
+        <center>
+            <div id="button" onclick="toggle_start()">
+                <i class="fa fa-windows" aria-hidden="true"></i>
+            </div>
+            <div id="button">
+                <a href="https://twitter.com/ir4hul"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div id="button">
+                <a href="https://www.linkedin.com/in/rahul-275108156/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <div id="button">
+                <a href="https://github.com/ir4hul"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+            <div id="button">
+                <a href="mailto:rahul46940@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+
+            <!-- Icons On The Right Of Taskbar-->
+            <div id="button_right">
+                <i class="fa fa fa-fort-awesome" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Fontawesome"></i>
+            </div>
+            <div id="button_right">
+                <i class="fa fa-css3" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="CSS3"></i>
+            </div>
+            <div id="button_right">
+                <i class="fa fa-html5" aria-hidden="true"></i>
+            </div>
+            <div id="button_right_credit">
+                Made with <i class="fa fa-heart" aria-hidden="true" style="color: #ff0000;"></i> using :
+            </div>
+        </center>
+    </div>
+</body>
+
 </html>
