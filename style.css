@@ -19,6 +19,27 @@ html,body
 
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) 
+{
+
+html,body
+{
+  zoom: 1.0;
+}
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) 
+
+{
+
+html,body
+{
+  zoom: 1.25;
+}
+
+}
+
 #taskbar 
 {
    position:fixed;
@@ -92,7 +113,6 @@ html,body
 {
   color: #fff;
   margin: auto;
-  font-size: 20px;
   padding: 12.5px 14.25px;
 }
 
