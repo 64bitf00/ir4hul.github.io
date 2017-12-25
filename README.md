@@ -3,5 +3,3 @@
 My portfolio.
 
 Under construction.
-
-Not mobile friendly.
