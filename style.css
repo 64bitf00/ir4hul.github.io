@@ -61,7 +61,7 @@ html,body
 {
   height:500px;
   width:300px;
-  background:rgba(20,20,20,0.95);
+  background:rgba(20,20,20,0.75);
   display:none;
   transition:2s;
   position:fixed;
