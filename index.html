@@ -7,7 +7,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script>
@@ -27,9 +26,28 @@
             }
         }
     </script>
+    <script type="text/javascript">
+
+    	// click on the div
+function toggle(e, id) {
+    var el = document.getElementById(id);
+    
+    el.style.display = (el.style.display == 'none' || el.style.display == '') ? 'block' : 'none';
+
+    // save it for hiding
+    toggle.el = el;
+
+    // stop the event right here
+    if (e.stopPropagation) e.stopPropagation();
+    e.cancelBubble = true;
+    return false;
+}
+
+  </script>
 </head>
 
 <body>
+	<div id="explorer">Hidden div</div>
     <!--Main Desktop-->
     <div id="desktop" onclick="off_start()">
         <div id="icon">
@@ -37,10 +55,12 @@
                 <span>My Computer</span>
             </center>
         </div>
-        <div id="icon">
+        <div id="icon" class="folder">
+        	<a href="#" onclick="toggle(event, 'explorer');" style="text-decoration: none;">
             <center><img src="https://png.icons8.com/color/96/opened-folder.png" title="Folder" width="64" height="64">
                 <span>Folder</span>
             </center>
+        	</a>
         </div>
         <div id="icon">
             <center><img src="https://png.icons8.com/color/96/console.png" title="Terminal" width="64" height="64">
